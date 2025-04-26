@@ -100,7 +100,7 @@ async function handleSearch(e) {
             const recommendData = await recommendResponse.json();
 
             // Get the top 3 recommendations
-            const recommendations = recommendData.results.slice(0, 3);
+            const recommendations = recommendData.results.slice(0, 6);
 
             // Get the recommendations container
             let recommendationsSection = document.querySelector('.movie-recommendations .movie-list');
